@@ -1,10 +1,10 @@
 $("path").hover(function(e) {
   $('#info-card').css('display','block');
-  $('#info-card').html($(this).data('info') + blah blah);
+  $('#info-card').html($(this).data('info'));
 });
 
 $("path").mouseleave(function(e) {
-  $('#info-box').css('display','none');
+  $('#info-card').css('display','none');
 });
 
 $(document).mousemove(function(e) {
