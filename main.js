@@ -1,6 +1,6 @@
 $("path").hover(function(e) {
   $('#info-card').css('display','block');
-  $('#info-card').html($(this).data('info'));
+  $('#info-card').html($(this).data('info') + blah blah);
 });
 
 $("path").mouseleave(function(e) {
