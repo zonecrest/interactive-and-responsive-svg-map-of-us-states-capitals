@@ -3,10 +3,10 @@ $("path").hover(function(e) {
   $('#info-card').html($(this).data('info'));
 
     var name = $(this).attr('id');// .id;// 'one';//e.features[0].properties.name;
-    var iataCode = $(this).attr('bigText');//'two'; //e.features[0].properties.iataCode;
+    var mainText = $(this).attr('mainText');//'two'; //e.features[0].properties.iataCode;
 
-    // Display airport info
-    document.querySelector('#airport-name').innerText = name + " (" + iataCode + ")";
+    // Display layer info
+    document.querySelector('#layer-name').innerText = name + " (" + mainText + ")";
 
 
 });
