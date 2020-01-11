@@ -2,12 +2,12 @@ $("path").hover(function(e) {
   $('#info-card').css('display','block');
   $('#info-card').html($(this).data('info'));
 
-    var name = $(this).attr('id');// .id;// 'one';//e.features[0].properties.name;
-    var mainText = $(this).attr('mainText');//'two'; //e.features[0].properties.iataCode;
+    var name = $(this).attr('id');
+    var mainText = $(this).attr('mainText');
 
     // Display layer info
-    document.querySelector('#layer-name').innerText = name + " (" + mainText + ")";
-
+    document.querySelector('#layerName').innerText = name ;
+    document.querySelector('#mainText').innerText = mainText;
 
 });
 
