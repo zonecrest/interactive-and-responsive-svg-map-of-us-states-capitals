@@ -3,7 +3,7 @@ $("path").hover(function(e) {
   $('#info-card').html($(this).data('info'));
 
     var name = $(this).attr('id');// .id;// 'one';//e.features[0].properties.name;
-    var iataCode = 'two'; //e.features[0].properties.iataCode;
+    var iataCode = $(this).attr('bigText');//'two'; //e.features[0].properties.iataCode;
 
     // Display airport info
     document.querySelector('#airport-name').innerText = name + " (" + iataCode + ")";
