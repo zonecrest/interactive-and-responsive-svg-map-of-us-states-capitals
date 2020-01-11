@@ -16,7 +16,7 @@ $("path").mouseleave(function(e) {
 });
 
 $(document).mousemove(function(e) {
-  $('#info-card').css('top',e.pageY-$('#info-card').height()+30);
+  $('#info-card').css('top',e.pageY-$('#info-card').height()+300);
   $('#info-card').css('left',e.pageX-($('#info-card').width())/4);
 }).mouseover();
 
